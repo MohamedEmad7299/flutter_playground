@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'FlutterTasks/jerry_store.dart';
+import 'FlutterTasks/tom_kitchen.dart';
 
 void main() {
 
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
-      statusBarColor: Color(0xFFEEF4F6), // Background color of status bar
+      statusBarColor: Colors.white, // Background color of status bar
       statusBarIconBrightness: Brightness.dark, // For Android
       statusBarBrightness: Brightness.light, // For iOS
     ),
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: JerryStore(),
+      home: TomKitchen(),
     );
   }
 }
