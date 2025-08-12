@@ -2,7 +2,22 @@
 class Assets {
   Assets._();
 
+  static const String imagesBombTom = 'assets/images/bomb_tom.png';
   static const String imagesCar = 'assets/images/car.png';
+  static const String imagesFrozenTom = 'assets/images/frozen_tom.png';
+  static const String imagesJerryProfile = 'assets/images/jerry_profile.png';
+  static const String imagesLoverTom = 'assets/images/lover_tom.png';
+  static const String imagesMoneyTom = 'assets/images/money_tom.png';
+  static const String imagesSleepingTom = 'assets/images/sleeping_tom.png';
+  static const String imagesSportTom = 'assets/images/sport_tom.png';
+  static const String imagesSpyTom = 'assets/images/spy_tom.png';
+  static const String svgsArrowRight = 'assets/svgs/arrow_right.svg';
+  static const String svgsCart = 'assets/svgs/cart.svg';
+  static const String svgsEclipse = 'assets/svgs/eclipse.svg';
+  static const String svgsFilter = 'assets/svgs/filter.svg';
   static const String svgsLogo = 'assets/svgs/logo.svg';
+  static const String svgsMoneyBag = 'assets/svgs/money_bag.svg';
+  static const String svgsNotification = 'assets/svgs/notification.svg';
+  static const String svgsSearch = 'assets/svgs/search.svg';
 
 }
