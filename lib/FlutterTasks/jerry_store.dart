@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_playground/Models/tom_item.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -7,49 +8,49 @@ import '../generated/assets.dart';
 class JerryStore extends StatelessWidget {
   JerryStore({super.key});
 
-  final tomList = [
-    {
-      'image': Assets.imagesSportTom,
-      'title': 'Sport Tom',
-      'description': 'He runs 1 meter... trips over his boot.',
-      'price': '3',
-      'oldPrice': '5',
-    },
-    {
-      'image': Assets.imagesLoverTom,
-      'title': 'Tom The Lover',
-      'description': 'He loves one-sidedly... and is beaten by the other side.',
-      'price': '5',
-      'oldPrice': '',
-    },
-    {
-      'image': Assets.imagesBombTom,
-      'title': 'Tom the bomb',
-      'description': 'He blows himself up before Jerry can catch him.',
-      'price': '10',
-      'oldPrice': '',
-    },
-    {
-      'image': Assets.imagesSpyTom,
-      'title': 'Spy Tom',
-      'description': 'Disguises itself as a table.',
-      'price': '12',
-      'oldPrice': '',
-    },
-    {
-      'image': Assets.imagesFrozenTom,
-      'title': 'Frozen Tom',
-      'description': 'He was chasing Jerry, he froze after the first look.',
-      'price': '10',
-      'oldPrice': '',
-    },
-    {
-      'image': Assets.imagesSleepingTom,
-      'title': 'Sleeping Tom',
-      'description': 'He doesn\'t chase anyone, he just snores in stereo.',
-      'price': '10',
-      'oldPrice': '',
-    },
+  final List<TomItem> tomList = [
+    TomItem(
+      image: Assets.imagesSportTom,
+      title: 'Sport Tom',
+      description: 'He runs 1 meter... trips over his boot.',
+      price: '3',
+      oldPrice: '5',
+    ),
+    TomItem(
+      image: Assets.imagesLoverTom,
+      title: 'Tom The Lover',
+      description: 'He loves one-sidedly... and is beaten by the other side.',
+      price: '5',
+      oldPrice: '',
+    ),
+    TomItem(
+      image: Assets.imagesBombTom,
+      title: 'Tom the bomb',
+      description: 'He blows himself up before Jerry can catch him.',
+      price: '10',
+      oldPrice: '',
+    ),
+    TomItem(
+      image: Assets.imagesSpyTom,
+      title: 'Spy Tom',
+      description: 'Disguises itself as a table.',
+      price: '12',
+      oldPrice: '',
+    ),
+    TomItem(
+      image: Assets.imagesFrozenTom,
+      title: 'Frozen Tom',
+      description: 'He was chasing Jerry, he froze after the first look.',
+      price: '10',
+      oldPrice: '',
+    ),
+    TomItem(
+      image: Assets.imagesSleepingTom,
+      title: 'Sleeping Tom',
+      description: 'He doesn\'t chase anyone, he just snores in stereo.',
+      price: '10',
+      oldPrice: '',
+    ),
   ];
 
   @override
@@ -271,11 +272,11 @@ class JerryStore extends StatelessWidget {
                 mainAxisSpacing: 24,
                 children: List.generate(6, (index) {
                   return CartItem(
-                    image: tomList[index]['image']!,
-                    title: tomList[index]['title']!,
-                    description: tomList[index]['description']!,
-                    price: tomList[index]['price']!,
-                    oldPrice: tomList[index]['oldPrice']!,
+                    image: tomList[index].image,
+                    title: tomList[index].title,
+                    description: tomList[index].description,
+                    price: tomList[index].price,
+                    oldPrice: tomList[index].oldPrice,
                   );
                 }),
               ),
