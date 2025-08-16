@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_playground/FlutterTasks/secret_episodes.dart';
 import 'FlutterTasks/tom_account.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: TomAccount(),
+      home: SecretEpisodes(),
     );
   }
 }
