@@ -1,23 +1,16 @@
+
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_playground/FlutterTasks/secret_episodes.dart';
-import 'FlutterTasks/tom_account.dart';
+import 'package:flutter_playground/riverpod_tasks/counter_screen/counter_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
 
-  SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.white, // Background color of status bar
-      statusBarIconBrightness: Brightness.dark, // For Android
-      statusBarBrightness: Brightness.light, // For iOS
-    ),
-  );
-
-  runApp(const MyApp());
+  runApp(ProviderScope(child: FlutterPlayground()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FlutterPlayground extends StatelessWidget {
+
+  const FlutterPlayground({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: SecretEpisodes(),
+      home: CounterScreen(),
     );
   }
 }

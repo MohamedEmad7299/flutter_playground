@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../AppColors.dart';
+import '../core/constants/AppColors.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

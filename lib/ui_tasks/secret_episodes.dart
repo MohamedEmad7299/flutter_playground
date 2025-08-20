@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/Models/head_item.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../core/presentation_models/head_item.dart';
 import '../generated/assets.dart';
 
 class SecretEpisodes extends StatelessWidget {

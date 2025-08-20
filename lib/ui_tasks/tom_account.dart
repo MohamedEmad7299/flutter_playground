@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../Models/loading_item.dart';
+import '../core/presentation_models/loading_item.dart';
 import '../generated/assets.dart';
 
 class TomAccount extends StatelessWidget {
