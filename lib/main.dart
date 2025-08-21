@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter_playground/riverpod_tasks/task_screen/task_screen.dart';
+import 'package:flutter_playground/riverpod_tasks/weather_screen/wether_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
@@ -20,7 +20,7 @@ class FlutterPlayground extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: TaskScreen(),
+      home: WeatherScreen(),
     );
   }
 }
